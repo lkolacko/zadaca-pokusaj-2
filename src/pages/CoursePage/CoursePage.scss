@@ -1,0 +1,60 @@
+@import "../../theme.scss";
+
+.FeaturedCourse {
+
+    @media (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+    };
+    
+
+
+    &-Figure {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+        overflow: hidden;
+        margin-bottom: 16px;
+        transition: all 0.3s;
+
+        @media (min-width:$tablet) {
+            width:350px;
+            height:350px;
+            flex-shrink:0;
+            margin-bottom:0;
+        };
+        @media (min-width:$desktopLarge) {
+            width:450px;
+            height:450px;
+        };
+        
+    };
+
+    &-Img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+
+    &-Text {
+        font-size:16px;
+        line-height:180%;
+        color: $colorTextPrimary;
+
+        @media(min-width:$desktopLarge) {
+            padding-left:64px;
+        }
+
+        @media(min-width:$tablet) {
+            padding-left:48px;
+        };
+    };
+};
+
+
+
+
+
+
+
