@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.scss";
 import LogoImg from "../../assets/images/logo.svg";
 import Button from "../Button/Button";
-import {NavLink} from "react-router-dom";
+import {NavLink, Link} from "react-router-dom";
 
 const Header = ({modifiers}) => {
     const modifierClasses = {
@@ -20,9 +20,9 @@ const Header = ({modifiers}) => {
     return (
         <header className={headerClass}>
         <div className="Header-Inner">
-            <a href="/" className="Header-LogoLink">
+            <Link to="/" className="Header-LogoLink">
                 <img className="Header-Logo" src={LogoImg} alt="Academy logo"/>
-            </a>
+            </Link>
             <svg className="Header-Hamburger" 
                  width="448" 
                  height="392" 

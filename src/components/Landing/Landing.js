@@ -8,7 +8,6 @@ const Landing = () => {
     return (    
         <div className="Landing">
         <img className="Landing-Img" src={LandingImg} alt="landing image"></img>
-        {/* iz Landing-Image u landing-Img */}
         <div className="Landing-Overlay">
             <div className="Landing-OverlayPrimary"></div>
             <div className="Landing-OverlaySecondary"></div>

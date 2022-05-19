@@ -1,5 +1,6 @@
 import React from 'react';
 import './CourseCard.scss';
+import { Link } from 'react-router-dom';
 
 const CourseCard = ({
     imgSrc,
@@ -8,13 +9,13 @@ const CourseCard = ({
     subtitle
 }) => {
     return (
-        <a href="/examplecourse" className="Course">
+        <Link to="/examplecourse" className="Course">
             <figure className="Course-Figure">
                 <img src={imgSrc} alt={imgAlt} className="Course-Img" />   
             </figure>
             <h3 className="Course-Title">{title}</h3>
             <p className="Course-Subtitle">{subtitle}</p>
-        </a>
+        </Link>
     );
 }
 
