@@ -1,5 +1,4 @@
 import React from "react";
-import Grid from "../../components/Grid/Grid.js";
 import Header from "../../components/Header/Header.js";
 import Main from "../../components/Main/Main.js";
 import Section from "../../components/Section/Section.js";
@@ -12,7 +11,7 @@ import LectureImg6 from '../../assets/images/lecture-6.jpg';
 import LectureImg7 from '../../assets/images/lecture-7.jpg';
 import LectureImg8 from '../../assets/images/lecture-8.jpg';
 import CourseCard from "../../components/CourseCard/CourseCard.js";
-
+import { Grid } from "../../lib/style/generalStyles.js";
 
 
 
@@ -20,7 +19,7 @@ import CourseCard from "../../components/CourseCard/CourseCard.js";
 const CoursesFrontPage = () => {
     return (
     <>
-        <Header modifiers={["secondary"]}/>
+        <Header isSecondary={true} />
         <Main>
             
             <Section 

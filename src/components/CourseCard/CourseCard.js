@@ -1,5 +1,12 @@
 import React from 'react';
 import './CourseCard.scss';
+import {
+    Course,
+    Figure,
+    Image,
+    Title,
+    Subtitle
+} from "./CourseCardStyle"
 
 const CourseCard = ({
     imgSrc,

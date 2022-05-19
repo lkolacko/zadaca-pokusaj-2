@@ -4,8 +4,7 @@ import CoursePage from "./pages/CoursePage/CoursePage";
 import CoursesFrontPage from "./pages/CoursesPage/CoursesPage";
 import {BrowserRouter as Router, 
         Routes, 
-        Route, 
-        NavLink} 
+        Route} 
   from 'react-router-dom';
 import TopOfThePage from "./TopOfThePage"
 

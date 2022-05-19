@@ -1,5 +1,4 @@
 import React from "react";
-import Grid from "../../components/Grid/Grid.js";
 import Header from "../../components/Header/Header.js";
 import Landing from "../../components/Landing/Landing.js";
 import Main from "../../components/Main/Main.js";
@@ -10,7 +9,7 @@ import LectureImg3 from '../../assets/images/lecture-3.jpg';
 import LectureImg4 from '../../assets/images/lecture-4.jpg';
 import CourseCard from "../../components/CourseCard/CourseCard.js";
 import Testimonial from "../../components/Testimonial/Testimonial.js";
-
+import { Grid } from "../../lib/style/generalStyles.js";
 import '../../theme.scss';
 
 

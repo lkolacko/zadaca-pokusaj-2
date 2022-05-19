@@ -9,7 +9,7 @@ import Section from '../../components/Section/Section';
 const CoursePage = () => {
     return (
         <>
-        <Header modifiers={["secondary"]}/>
+        <Header isSecondary={true}/>
         <Main>
             <Section buttonText={"Back to all courses"} actionText={"120+ minutes"} title={"2. HTML&CSS "}
             linkToPage={'/allcourses'}>
