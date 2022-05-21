@@ -2,7 +2,6 @@ import React from "react";
 import "./Header.scss";
 import LogoImg from "../../assets/images/logo.svg";
 import Button from "../Button/Button";
-import {NavLink, Link} from "react-router-dom";
 import {
     Header as HeaderWrapper,
     HeaderInner,

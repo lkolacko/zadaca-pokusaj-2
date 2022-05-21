@@ -1,4 +1,5 @@
 import "./Button.scss";
+import { Button as ButtonWrapper } from "./ButtonStyle";
 
 const Button = ({ modifiers, children}) => {
     

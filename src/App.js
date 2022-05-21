@@ -16,7 +16,7 @@ function App() {
     <TopOfThePage>
     <Routes>
       <Route path="/" element={<Home/>} />
-      <Route path="/examplecourse" element={<CoursePage/>} />
+      <Route path="/course/:id" element={<CoursePage/>} />
       <Route path="/allcourses" element={<CoursesFrontPage/>} />
     </Routes>
     </TopOfThePage>

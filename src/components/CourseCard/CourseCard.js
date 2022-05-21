@@ -1,27 +1,28 @@
 import React from 'react';
-import './CourseCard.scss';
 import {
     Course,
     Figure,
     Image,
     Title,
-    Subtitle
+    Subtitle,
 } from "./CourseCardStyle"
+
 
 const CourseCard = ({
     imgSrc,
     imgAlt,
     title,
-    subtitle
+    subtitle,
+    courseId,
 }) => {
     return (
-        <a href="/examplecourse" className="Course">
-            <figure className="Course-Figure">
-                <img src={imgSrc} alt={imgAlt} className="Course-Img" />   
-            </figure>
-            <h3 className="Course-Title">{title}</h3>
-            <p className="Course-Subtitle">{subtitle}</p>
-        </a>
+    <Course to={`/course/${courseId}`}>
+            <Figure>
+                <Image src={imgSrc} alt={imgAlt} />   
+            </Figure>
+            <Title>{title}</Title>
+            <Subtitle>{subtitle}</Subtitle>
+    </Course>
     );
 }
 

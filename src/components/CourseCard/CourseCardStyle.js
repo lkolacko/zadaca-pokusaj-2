@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {Link} from "react-router-dom";
 import {colors, breakpoints} from "../../lib/style/theme";
 
-export const Course = styled.a`
+export const Course = styled(Link)`
     &:hover {
         figure {
             box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -13,7 +13,7 @@ export const Course = styled.a`
          }
 
         h3 {
-            color: $colorPrimary;
+            color: ${colors.textPrimary};
          }
     }
 `;
@@ -69,3 +69,4 @@ export const Subtitle = styled.p`
     color: ${colors.textSecondary};
     text-align: center;
 `;
+
