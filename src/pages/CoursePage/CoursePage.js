@@ -37,8 +37,9 @@ const CoursePage = () => {
                 title={course.title}
                 actionText={course.subtitle}
                 buttonText={"Go back"}
+                linkToPage="#"
                  >
-            <CourseCard imgSrc={course.imgSrc} imgAlt={course.imgAlt} text={course.text} /> 
+            {/* <CourseCard imgSrc={course.imgSrc} imgAlt={course.imgAlt} text={course.text} courseId={course.id} />  */}
             </Section>  
         )}  
               

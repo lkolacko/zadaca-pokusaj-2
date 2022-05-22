@@ -36,48 +36,56 @@ const CoursesFrontPage = () => {
                             imgAlt={'Introduction'}
                             title={'1. Introduction'}
                             subtitle={'60 Minutes'}
+                            courseId={1}
                         />
                         <CourseCard
                             imgSrc={LectureImg2}
                             imgAlt={'HTML & CSS'}
                             title={'2. HTML & CSS'}
-                            subtitle={'120+ Minutes'}
+                            subtitle={'120+ Minutes'}                            
+                            courseId={1}
                         />
                         <CourseCard
                             imgSrc={LectureImg3}
                             imgAlt={'Version Control System'}
                             title={'3. Version Control System'}
-                            subtitle={'120+ Minutes'}
+                            subtitle={'120+ Minutes'}                            
+                            courseId={1}
                         />
                         <CourseCard
                             imgSrc={LectureImg4}
                             imgAlt={'Advanced CSS'}
                             title={'4. Advanced CSS'}
-                            subtitle={'120+ Minutes'}
+                            subtitle={'120+ Minutes'}                            
+                            courseId={1}
                         />
                         <CourseCard
                             imgSrc={LectureImg5}
                             imgAlt={'JS Basics'}
                             title={'5. JavaScript Basics'}
-                            subtitle={'60 Minutes'}
+                            subtitle={'60 Minutes'}                            
+                            courseId={1}
                         />
                         <CourseCard
                             imgSrc={LectureImg6}
                             imgAlt={'Advanced JS'}
                             title={'6. Advanced JavaScript'}
-                            subtitle={'60 Minutes'}
+                            subtitle={'60 Minutes'}                            
+                            courseId={1}
                         />
                         <CourseCard
                             imgSrc={LectureImg7}
                             imgAlt={'Intro to React'}
                             title={'7. Intro to React'}
-                            subtitle={'120 Minutes'}
+                            subtitle={'120 Minutes'}                            
+                            courseId={1}
                         />
                         <CourseCard
                             imgSrc={LectureImg8}
                             imgAlt={'React Events'}
                             title={'8. React events and conditionals'}
-                            subtitle={'120+ Minutes'}
+                            subtitle={'120+ Minutes'}                            
+                            courseId={1}
                         />
 
             </Grid>
