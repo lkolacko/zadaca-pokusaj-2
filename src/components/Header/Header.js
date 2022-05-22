@@ -29,12 +29,12 @@ const Header = ({isSecondary}) => {
                 <Nav>
                     <HeaderNavLink to="/allcourses">Courses</HeaderNavLink>
                     <ButtonLink to="/">
-                        <Button modifiers={["nav"]}>
+                        <Button isNav>
                             Sign in
                         </Button>
                     </ButtonLink>                    
                     <ButtonLink to="/">
-                        <Button modifiers={["nav", "secondary"]}>
+                        <Button isNav isSecondary>
                             Register
                         </Button>
                     </ButtonLink>

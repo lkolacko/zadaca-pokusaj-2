@@ -18,7 +18,7 @@ const Testimonial = () => {
                 <Image src={TestimonialImg} alt="Testimonialka"  />
             </Figure>
             <Content>
-                <Text className="Testimonial-Text">
+                <Text>
                     <Quotation>"</Quotation>
                     At the academy, I learned how to apply technology in practice. 
                     Frontend education was demanding, it required a lot of time. 

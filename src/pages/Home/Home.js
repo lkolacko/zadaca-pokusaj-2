@@ -79,7 +79,7 @@ const Home = () => {
                 </Grid> */}
                     </Section>
             
-            <Section isHeadingVisible={false} modifiers={["testimonials"]}>
+            <Section isHeadingVisible={false} isSecondary >
                     <Testimonial />
             </Section>
         </Main>

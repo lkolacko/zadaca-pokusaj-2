@@ -5,12 +5,13 @@ import {colors, breakpoints} from "../../lib/style/theme";
 export const Section = styled.section`
     padding: 60px 24px;
 
-    ${props => props.isSecondary && `
-        background-color: ${colors.bgSecondary};
-    `}
     @media (${breakpoints.desktop}){
         padding: 120px 0;
     }
+
+    ${props => props.isSecondary && `
+        background-color: ${colors.bgSecondary};
+    `}
 `;
 
 export const SectionInner = styled.div`

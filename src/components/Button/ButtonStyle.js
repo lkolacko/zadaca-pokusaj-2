@@ -27,8 +27,11 @@ export const Button = styled.button`
     `}
 
     ${props => props.isNav && `
-        background: ${colors.primary};
-        color: ${colors.secondary};
+        width: 150px;
+        &:hover{
+            transition: all 0.3s ease-in-out;
+            filter: drop-shadow(0 3px 3px ${colors.black});
+        }
     `}
     ${props => props.isOutline && `
         border: 1px solid ${colors.primary};

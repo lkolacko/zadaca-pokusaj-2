@@ -12,11 +12,19 @@ import LectureImg7 from '../../assets/images/lecture-7.jpg';
 import LectureImg8 from '../../assets/images/lecture-8.jpg';
 import CourseCard from "../../components/CourseCard/CourseCard.js";
 import { Grid } from "../../lib/style/generalStyles.js";
-
-
+import coursesMock from "../../lib/mock/courses";
+import {useState, useEffect} from "react";
 
 
 const CoursesFrontPage = () => {
+    const [courses, setCourses] = useState(null);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setCourses(coursesMock);
+        }, 1000 );
+    }, []) 
+
     return (
     <>
         <Header isSecondary={true} />
@@ -29,8 +37,27 @@ const CoursesFrontPage = () => {
             linkToPage={"/"}
            
             >
-            
-            <Grid>
+           {courses && 
+                <Grid>
+                    {courses.map(
+                        (course, index) => 
+                            index <= 7 && (  
+                                <CourseCard
+                                    key={course.id}
+                                    courseId={course.id}
+                                    imgSrc={course.imgSrc}
+                                    imgAlt={course.imgAlt}
+                                    title={course.title}
+                                    subtitle={course.subtitle}
+                                />
+                            )
+                    )}
+                    </Grid>}
+
+
+
+
+            {/* <Grid>
                         <CourseCard
                             imgSrc={LectureImg1}
                             imgAlt={'Introduction'}
@@ -88,7 +115,7 @@ const CoursesFrontPage = () => {
                             courseId={1}
                         />
 
-            </Grid>
+            </Grid> */}
         
             </Section>
             

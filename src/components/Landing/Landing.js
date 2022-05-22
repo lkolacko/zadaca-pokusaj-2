@@ -27,7 +27,7 @@ const Landing = () => {
                 <Title>Learn what matters with Speck and FOI</Title>
                 <Subtitle>Make a turnaround in your career or upgrade your current skill set with knowledge-based lessons from IT pactices
                 </Subtitle> 
-                <Button modifiers={["landing"]}>
+                <Button isLanding>
                     Explore Courses
                 </Button>
             </ContentInner>

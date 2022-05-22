@@ -21,12 +21,12 @@ const Section = ({
     children,
 }) => {
     return (
-        <SectionWrapper isSecondary = {isSecondary}>
+        <SectionWrapper isSecondary={isSecondary}>
             <SectionInner>
-                {actionText && <ActionText className="Section-ActionText">{actionText}</ActionText>}
+                {actionText && <ActionText>{actionText}</ActionText>}
                 {isHeadingVisible && <Heading>
                     {title && <Title>{title}</Title>}
-                    {buttonText && <Link to={linkToPage}><Button modifiers={['heading', 'outline']}>{buttonText}</Button></Link>}
+                    {buttonText && <Link to={linkToPage}><Button isHeading isOutline >{buttonText}</Button></Link>}
                 </Heading>}
                 {children}
         </SectionInner>
