@@ -1,10 +1,18 @@
 import React from 'react';
 import Button from '../Button/Button';
-import './Section.scss';
+// import './Section.scss';
 import {Link} from "react-router-dom";
+import {
+    Section as SectionWrapper,
+    SectionInner,
+    ActionText,
+    Heading,
+    Title,
+    
+} from "./SectionStyle";
 
 const Section = ({
-    modifiers,
+    isSecondary,
     actionText,
     title,
     buttonText,
@@ -12,30 +20,18 @@ const Section = ({
     isHeadingVisible = true,
     children,
 }) => {
-    const modifierClasses = {
-        testimonials: "Section_testimonials"
-    }
-
-    let sectionClass = "Section";
-    
-    if (modifiers){
-        modifiers.map(modifier => {
-            sectionClass += " " + modifierClasses[modifier];
-        });
-    }
-
     return (
-        <section className={sectionClass}>
-            <div className="Section-Inner">
-                {actionText && <span className="Section-ActionText">{actionText}</span>}
-                {isHeadingVisible && <div className="Section-Heading">
-                    {title && <h2 className="Section-Title">{title}</h2>}
+        <SectionWrapper isSecondary = {isSecondary}>
+            <SectionInner>
+                {actionText && <ActionText className="Section-ActionText">{actionText}</ActionText>}
+                {isHeadingVisible && <Heading>
+                    {title && <Title>{title}</Title>}
                     {buttonText && <Link to={linkToPage}><Button modifiers={['heading', 'outline']}>{buttonText}</Button></Link>}
-                </div>}
+                </Heading>}
                 {children}
-            </div>
-        </section>
+        </SectionInner>
+        </SectionWrapper>
     );
-}
+};
 
 export default Section;

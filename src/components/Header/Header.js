@@ -1,5 +1,4 @@
 import React from "react";
-import "./Header.scss";
 import LogoImg from "../../assets/images/logo.svg";
 import Button from "../Button/Button";
 import {
@@ -14,6 +13,7 @@ import {
 from "./HeaderStyle";
 
 
+
 const Header = ({isSecondary}) => {
     
     return(
@@ -22,7 +22,10 @@ const Header = ({isSecondary}) => {
                 <LogoLink to="/">
                     <LogoElement src={LogoImg} alt="Academy logo" />
                 </LogoLink>
-                <Hamburger />
+                <Hamburger>
+                    
+
+                </Hamburger>
                 <Nav>
                     <HeaderNavLink to="/allcourses">Courses</HeaderNavLink>
                     <ButtonLink to="/">

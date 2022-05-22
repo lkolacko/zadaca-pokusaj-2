@@ -69,6 +69,9 @@ export const HeaderNavLink = styled(NavLink)`
     color: ${colors.bgSecondary};
     letter-spacing: 1px;
     margin-right: 48px;
+
+ 
+    
 `;
 
 export const ButtonLink = styled(Link)`
@@ -79,3 +82,4 @@ export const ButtonLink = styled(Link)`
         margin-right: 0px;
     }
 `;
+

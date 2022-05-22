@@ -1,10 +1,11 @@
-import "./Main.scss";
+// import "./Main.scss";
+import {Main as MainWrapper} from "./MainStyle";
 
 const Main = (props) => {
     return (    
-        <main className="Main">
+        <MainWrapper className="Main">
             {props.children}
-        </main>
+        </MainWrapper>
     );
 }
 

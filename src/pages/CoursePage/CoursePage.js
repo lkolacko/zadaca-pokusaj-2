@@ -6,6 +6,8 @@ import {useState, useEffect} from "react";
 import { useParams } from 'react-router-dom';
 import coursesMock from '../../lib/mock/courses';
 import CourseCard from '../../components/CourseCard/CourseCard';
+import Main from "../../components/Main/Main";
+import LectureImg2 from "../../assets/images/lecture-2.jpg";
 
 
 const CoursePage = () => {

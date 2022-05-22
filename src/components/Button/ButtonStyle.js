@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import {colors} from "../../lib/style/theme";
 
-export const Button = styled.Button`
+
+export const Button = styled.button`
     border: none;
     display: inline-flex;
     justify-content: center;
@@ -20,22 +21,19 @@ export const Button = styled.Button`
         filter: drop-shadow(0 3px ${colors.textPrimary});
     }
 
-    &_nav {
-        width: 150px;
-        &:hover{
-            transition: all 0.3s ease-in-out;
-            filter: drop-shadow(0 3px 3px ${colors.black});
-        }
-    }
-    &_secondary {
+    ${props => props.isSecondary && `
         background: ${colors.primary};
         color: ${colors.secondary};
-    }
-    &_outline {
-        border: 1px solid ${colors.primary};
-    }
-    &_heading {
-        width: 200px;
-    }
-`;
+    `}
 
+    ${props => props.isNav && `
+        background: ${colors.primary};
+        color: ${colors.secondary};
+    `}
+    ${props => props.isOutline && `
+        border: 1px solid ${colors.primary};
+    `}
+   ${props => props.isHeading && `
+        width: 200px;
+    `}
+`;

@@ -15,6 +15,7 @@ const CourseCard = ({
     subtitle,
     courseId,
 }) => {
+    console.log(courseId);
     return (
     <Course to={`/course/${courseId}`}>
             <Figure>

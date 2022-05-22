@@ -6,7 +6,7 @@ import {BrowserRouter as Router,
         Routes, 
         Route} 
   from 'react-router-dom';
-import TopOfThePage from "./TopOfThePage"
+import TopOfThePage from "./TopOfThePage";
 
 
 function App() {
