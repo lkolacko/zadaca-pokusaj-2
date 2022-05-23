@@ -5,12 +5,13 @@ import {
     Header as HeaderWrapper,
     HeaderInner,
     LogoLink,
-    LogoImg as LogoElement,
-    Hamburger,
-    Nav,
     HeaderNavLink,
-    ButtonLink } 
+    ButtonLink,
+    LogoImg as LogoElement,
+    Nav,
+} 
 from "./HeaderStyle";
+import Dropdown from "../Dropdown/Dropdown"
 
 
 
@@ -22,10 +23,10 @@ const Header = ({isSecondary}) => {
                 <LogoLink to="/">
                     <LogoElement src={LogoImg} alt="Academy logo" />
                 </LogoLink>
-                <Hamburger>
+                <Dropdown>
                     
 
-                </Hamburger>
+                </Dropdown>
                 <Nav>
                     <HeaderNavLink to="/allcourses">Courses</HeaderNavLink>
                     <ButtonLink to="/">
