@@ -7,7 +7,9 @@ import {BrowserRouter as Router,
         Route} 
   from 'react-router-dom';
 import TopOfThePage from "./TopOfThePage";
-
+import Register from "./pages/Register/Register";
+import Login from "./pages/Login/Login";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
       <Route path="/" element={<Home/>} />
       <Route path="/course/:id" element={<CoursePage/>} />
       <Route path="/allcourses" element={<CoursesFrontPage/>} />
+      <Route path="/register" element={<Register/>} />
+      <Route path="/sign-in" element={<Login/>} />
+      <Route path="/profile" element={<Profile/>} />
     </Routes>
     </TopOfThePage>
   </Router>

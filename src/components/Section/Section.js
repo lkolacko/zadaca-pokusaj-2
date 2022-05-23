@@ -7,25 +7,31 @@ import {
     SectionInner,
     ActionText,
     Heading,
-    Title,
-    
+    SectionTitleH2,
+    SectionTitleH1,
 } from "./SectionStyle";
 
 const Section = ({
-    isSecondary,
+    isTestimonial,
     actionText,
     title,
     buttonText,
     linkToPage,
     isHeadingVisible = true,
     children,
+    isMainSection = false,
+    isCentered = false,
 }) => {
     return (
-        <SectionWrapper isSecondary={isSecondary}>
+        <SectionWrapper isTestimonial={isTestimonial}>
             <SectionInner>
                 {actionText && <ActionText>{actionText}</ActionText>}
-                {isHeadingVisible && <Heading>
-                    {title && <Title>{title}</Title>}
+                {isHeadingVisible && 
+                <Heading>
+                    {title && (isMainSection ? 
+                        <SectionTitleH1 isCentered={isCentered}>{title}</SectionTitleH1> 
+                        : 
+                        <SectionTitleH2 isCentered={isCentered}>{title}</SectionTitleH2>)}
                     {buttonText && <Link to={linkToPage}><Button isHeading isOutline >{buttonText}</Button></Link>}
                 </Heading>}
                 {children}

@@ -1,7 +1,7 @@
 import { Button as ButtonWrapper } from "./ButtonStyle";
 // import "./Button.scss";
 
-const Button = ({ isHeading, isSecondary, isNav, isOutline, children}) => {
+const Button = ({ isHeading, isSecondary, isNav, isOutline, children, isForm}) => {
     
     // const modifierClasses = {
     //     secondary: 'Button_secondary',
@@ -13,7 +13,7 @@ const Button = ({ isHeading, isSecondary, isNav, isOutline, children}) => {
 
 
     return (    
-        <ButtonWrapper isSecondary={isSecondary} isNav={isNav} isOutline={isOutline} isHeading={isHeading}  >{children}</ButtonWrapper>
+        <ButtonWrapper isSecondary={isSecondary} isNav={isNav} isOutline={isOutline} isHeading={isHeading} isForm={isForm}  >{children}</ButtonWrapper>
     );
 };
 

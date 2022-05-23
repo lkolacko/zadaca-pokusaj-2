@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import {NavLink, Link} from "react-router-dom";
 import {colors, breakpoints} from "../../lib/style/theme";
+import { css } from "styled-components";
 
 export const Section = styled.section`
     padding: 60px 24px;
@@ -9,7 +9,7 @@ export const Section = styled.section`
         padding: 120px 0;
     }
 
-    ${props => props.isSecondary && `
+    ${props => props.isTestimonial && `
         background-color: ${colors.bgSecondary};
     `}
 `;
@@ -42,7 +42,7 @@ export const Heading = styled.div`
 }
 `;
 
-export const Title = styled.h2`
+const TitleStyle = css`
     color: ${colors.textPrimary};
     font-size: 26px;
     font-weight: 500;
@@ -56,4 +56,20 @@ export const Title = styled.h2`
     @media (${breakpoints.desktop}){
         font-size: 36px;
     }
+`;
+
+export const SectionTitleH1 = styled.h1`
+    ${TitleStyle}
+    ${(props) => props.isCentered &&`
+        text-align: center;
+        width: 100%;
+    `}
+`;
+
+export const SectionTitleH2 = styled.h2`
+    ${TitleStyle}
+    ${(props) => props.isCentered &&`
+        text-align: center;
+        width: 100%;
+    `}
 `;

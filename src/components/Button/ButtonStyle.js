@@ -39,4 +39,10 @@ export const Button = styled.button`
    ${props => props.isHeading && `
         width: 200px;
     `}
+     ${props => props.isForm && `
+        width: 220px;
+        display: block;
+        margin: auto;
+    `}
+
 `;
